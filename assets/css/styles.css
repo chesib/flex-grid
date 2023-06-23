@@ -46,12 +46,14 @@ footer p {
 	border-top: 1px solid;
 	border-color: #646060;
 }
+
 .navbar img {
 	width: 5%;
 	height: 20%;
 	margin-right: auto;
 	cursor: pointer;
 }
+
 .navbar a {
 	float: left;
 
@@ -80,6 +82,9 @@ aside {
 	color: #ffffff;
 	font-size: 1rem;
 }
+aside h1 {
+	text-align: center;
+}
 ul {
 	list-style-type: disc;
 	color: #ffffff;
@@ -88,7 +93,7 @@ ul {
 	list-style: circle;
 
 	margin: 50px;
-	margin-left: 5px;
+	margin-left: 55px;
 	border-radius: 5px;
 }
 
@@ -105,6 +110,7 @@ aside ul {
 	border-bottom: 1px solid;
 	border-color: #646060;
 	background-image: url(../img/estrellas-en-el-universo-morad.webp);
+	text-align: center;
 }
 
 aside ul li {
