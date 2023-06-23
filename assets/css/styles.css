@@ -64,9 +64,9 @@ footer p {
 
 .navbar a:hover {
 	background-color: #6e4c6a;
-	color: black;
 	border-radius: 10px;
-	transition: 0.5s;
+	transform: scale(1.02);
+	transition: 0.3s;
 }
 aside {
 	grid-area: aside;
@@ -119,6 +119,8 @@ aside ul li a {
 
 aside ul li a:hover {
 	color: rgb(255, 255, 255);
+	font-size: 17px;
+	transition: 0.1s;
 }
 .galery {
 	display: grid;
@@ -146,6 +148,8 @@ main {
 }
 .card:hover {
 	background-color: #6e4c6a;
+	transform: scale(1.02);
+	transition: 0.3s;
 }
 
 .card img {
