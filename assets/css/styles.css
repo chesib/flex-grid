@@ -20,55 +20,42 @@ body {
 header {
 	grid-area: header;
 	text-align: center;
-
-	background-color: rgb(182, 218, 215);
-}
-.title {
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-}
-.title img {
-	width: 15%;
-	height: 20%;
-	justify-content: st;
-}
-aside {
-	grid-area: aside;
-	height: 100%;
-	background-color: bisque;
+	color: white;
+	background-color: rgb(0, 0, 0);
 }
 
 footer {
 	grid-area: footer;
 	display: flex;
 	justify-content: center;
-	background-color: rgb(185, 211, 218);
+	background-color: rgb(0, 0, 0);
+	color: white;
+	border-top: 1px solid;
+	border-color: #646060;
 }
 footer p {
 	margin-left: 10px;
 }
-body {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
 
 .navbar {
-	background-color: rgb(180, 209, 198);
+	background-color: rgb(0, 0, 0);
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	padding: 10px;
-	border: 1px solid;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
 	border-color: #646060;
 }
-
+.navbar img {
+	width: 5%;
+	height: 20%;
+	margin-right: auto;
+	cursor: pointer;
+}
 .navbar a {
 	float: left;
 
-	color: #000000;
+	color: #ffffff;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -76,16 +63,33 @@ body {
 }
 
 .navbar a:hover {
-	background-color: #c8d3db;
+	background-color: #6e4c6a;
 	color: black;
+	border-radius: 10px;
+	transition: 0.5s;
 }
-
+aside {
+	grid-area: aside;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	background-color: rgb(0, 0, 0);
+	border-right: 1px solid;
+	border-color: #646060;
+	color: #ffffff;
+	font-size: 1rem;
+}
 ul {
 	list-style-type: disc;
-	color: #666;
+	color: #ffffff;
 	margin: 20px 0;
 	padding-left: 20px;
 	list-style: circle;
+
+	margin: 50px;
+	margin-left: 5px;
+	border-radius: 5px;
 }
 
 li {
@@ -95,6 +99,13 @@ aside ul {
 	list-style-type: none;
 	padding: 0;
 }
+.fondo {
+	height: 100px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #646060;
+	background-image: url(../img/estrellas-en-el-universo-morad.webp);
+}
 
 aside ul li {
 	margin-bottom: 10px;
@@ -102,30 +113,30 @@ aside ul li {
 
 aside ul li a {
 	text-decoration: none;
-	color: #333;
+	color: #a09ba0;
 	font-weight: bold;
 }
 
 aside ul li a:hover {
-	color: blue;
+	color: rgb(255, 255, 255);
 }
 .galery {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	width: 100%;
 	max-width: 800px;
-	row-gap: 1rem;
+	gap: 1rem;
 	margin: auto;
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
 main {
 	grid-area: main;
-	background-color: rgb(231, 231, 174);
+	background-color: rgb(0, 0, 0);
 }
 .card {
-	width: 200px;
-	background-color: #d5d89f;
+	width: 240px;
+	background-color: #2e2e2d;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	text-align: center;
@@ -134,7 +145,7 @@ main {
 	cursor: pointer;
 }
 .card:hover {
-	background-color: #c4c696;
+	background-color: #6e4c6a;
 }
 
 .card img {
@@ -146,7 +157,7 @@ main {
 }
 
 .card h3 {
-	color: #333;
+	color: #ffffff;
 	font-size: 18px;
 }
 
@@ -163,6 +174,7 @@ main {
 	color: #fff;
 	text-decoration: none;
 	border-radius: 5px;
+	margin-bottom: 10px;
 }
 
 .btn:hover {
